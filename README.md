@@ -1,3 +1,5 @@
+# Esoterica
+
 A mod by AndiBanandi/glamcube17 for the game Cataclysm: Dark Days Ahead.
 
 This mod adds various content to the game, including tools, equipment, books, recipes, and more. An effort is made to maintain game balance with all additions, though this is not a guarantee.
@@ -10,6 +12,8 @@ Some content may be offensive to some users, as it may include:
 * Anime trash
 Content not rated by the ESRB.
 
+GitHub repo:
+https://github.com/glamcube17/CDDAEsoterica
 
 
 ## Installation
@@ -33,4 +37,4 @@ This is not a dependency; integration is primarily in the form of including item
 
 ## PAQ (Preemptively Answered Questions)
 
-(In-progress)
+#### (In-progress)
