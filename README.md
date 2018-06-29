@@ -1,19 +1,21 @@
 # Esoterica
 
-A mod by AndiBanandi/glamcube17 for the game Cataclysm: Dark Days Ahead.
+A mod by AndiBanandi (aka glamcube17, gameboy17) for the game Cataclysm: Dark Days Ahead.
 
 This mod adds various content to the game, including tools, equipment, books, recipes, and more. An effort is made to maintain game balance with all additions, though this is not a guarantee.
 
-Some content may be offensive to some users, as it may include:  
+GitHub repo:  
+https://github.com/glamcube17/CDDAEsoterica
+
+Some content may be offensive to some users, as it may include:
+
 * Fantasy violence
 * Use of drugs
 * Mild sexual content
 * "Mature" humor
 * Anime trash
-Content not rated by the ESRB.
 
-GitHub repo:
-https://github.com/glamcube17/CDDAEsoterica
+Content not rated by the ESRB.
 
 
 ## Installation
@@ -32,7 +34,9 @@ Usable for Linux, Windows, and MacOS experimental builds of Cataclysm: Dark Days
 Compatible with most other CDDA mods.
 
 Additionally, there is some limited integration with the following mods:  
+
 * Battle Maid Redux
+
 This is not a dependency; integration is primarily in the form of including items from other mods in recipes.
 
 ## PAQ (Preemptively Answered Questions)
