@@ -1,0 +1,205 @@
+[
+  {
+    "type" : "martial_art",
+    "id" : "style_wife",
+    "name" : "Wife-Fu",
+    "description" : "Originally developed by women for self defense, this style utilizes a wide variety of weapons and relies on brains over brawn.",
+    "arm_block" : 1,
+    "leg_block" : 8,
+    "techniques": [
+      "tec_wife_feint",
+      "tec_wife_counter",
+      "tec_wife_precise",
+      "tec_wife_rapid",
+      "tec_wife_throw"
+    ],
+    "static_buffs": [
+      {
+        "id": "wife_static",
+        "name": "Girl Power",
+        "description": "Who needs brute strength? Brain over brawn gives much better results.\n-For each point by which your Int exceeds your Str, your speed increases by 5.\n-Damage scales with Int, with each point over your Str counting twice.",
+        "unarmed_allowed": true,
+        "melee_allowed": true,
+        "strictly_unarmed": false,
+        "flat_bonuses" : [
+          ["speed", "int",  5.0],
+          ["speed", "str", -5.0],
+
+          ["damage", "bash",       -5.0],
+          ["damage", "bash", "int", 1.0],
+          ["damage", "bash", "str",-0.5],
+          ["damage", "cut",        -5.0],
+          ["damage", "cut",  "int", 1.0],
+          ["damage", "cut",  "str",-0.5],
+          ["damage", "stab",       -5.0],
+          ["damage", "stab", "int", 1.0],
+          ["damage", "stab", "str",-0.5],
+          
+          ["armor", "bash", "int", 0.2],
+          ["armor", "bash", "str",-0.1]
+        ],
+        "bonus_dodges": 100, "//":"Soft-capped by ondodge_buff penalizing dodge skill",
+        "bonus_blocks": 1
+      }
+    ],
+    "onmove_buffs": [
+      {
+        "id": "wife_move",
+        "name": "Momentum",
+        "description": "You're building up speed.\n+5 Spd/stack, up to +50.\nOver long distances, you'll slow back down for the sake of stamina.",
+        "unarmed_allowed": true, 
+        "strictly_unarmed": false,
+        "min_melee": 2,
+        "min_dodge": 2,
+        "//":"+2 dodge at 9-10 stacks",
+        "//":"Up to +50 speed",
+        "flat_bonuses" : [
+          ["speed", 5.0],
+          ["dodge", 0.223],
+          ["armor", "heat", 1.2]
+        ],
+        "buff_duration": 2,
+        "max_stacks": 10
+      },
+      {
+        "id": "wife_move_longdist",
+        "name": "","description": "",
+        "unarmed_allowed": true, "strictly_unarmed": false,
+        "min_melee": 2, "min_dodge": 2,
+        "//":"Cancels out momentum for long-distance movement",
+        "//":"Prevent taking all stamina just from walking",
+        "flat_bonuses" : [ ["speed", -1.0] ],
+        "buff_duration": 2,
+        "max_stacks": 50
+      },
+      {
+        "id": "wife_move_limiter_detect",
+        "name": "","description": "",
+        "unarmed_allowed": true, "strictly_unarmed": false,
+        "min_melee": 2, "min_dodge": 2,
+        "buff_duration": 1,
+        "max_stacks": 1
+      },
+      {
+        "id": "wife_move_limiter",
+        "name": "","description": "",
+        "unarmed_allowed": true, "strictly_unarmed": false,
+        "min_melee": 2, "min_dodge": 2,
+        "req_buff": "wife_move_limiter_detect",
+        "//":"If moving again before detect buff removed, apply a penalty",
+        "//flat_bonuses" : [ ["speed", -5.0] ],
+        "buff_duration": 1,
+        "max_stacks": 10
+      }
+    ],
+    "onhit_buffs": [
+      {
+        "id": "wife_hit",
+        "name": "Warpath",
+        "description": "Repeated hits let you press your advantage.",
+        "unarmed_allowed": true, "melee_allowed": true, "strictly_unarmed": false,
+        "min_melee": 4,
+        "min_unarmed": 3,
+        "buff_duration": 2,
+        "//":"Can stack indefinitely, but extra miss chance acts as soft cap",
+        "max_stacks": 100,
+        "mult_bonuses": [
+          ["speed", 1.03],
+          ["hit", 0.99]
+        ]
+      }
+    ],
+    "ondodge_buffs": [
+      {
+        "id": "wife_dodge_bad",
+        "name": "girls are dodging, please wait warmly",
+        "//":"Block penalty acts as soft cap for extra dodges",
+        "description": "You could dodge all day. It does, however, get harder the more you have to dodge at once.",
+        "unarmed_allowed": true, "melee_allowed": true, "strictly_unarmed": false,
+        "buff_duration": 1,
+        "max_stacks": 1000,
+        "mult_bonuses": [ ["dodge", 0.95] ],
+        "flat_bonuses": [ ["dodge", -0.2] ]
+      }
+    ],
+    
+    "weapons" : [
+      "broom",
+      "mop",
+      "hoe",
+      "pan",
+      "waffleiron",
+      "g_shovel",
+      "cudgel",
+      "bokken",
+      "knife_butcher",
+      "katana",
+      "wakizashi",
+      "nodachi",
+      "naginata",
+      "tanto",
+      "firekatana_off",
+      "firekatana_on",
+      "q_staff",
+      "i_staff",
+      "mace",
+      "hockey_stick",
+      "golf_club",
+      "bullwhip",
+      "bowling_pin",
+      "stick",
+      "l-stick",
+      "l-stick_on",
+      "shock_staff",
+      "pastaextruder",
+      "cane",
+      "umbrella",
+      "teleumbrella",
+      "wrench",
+      "hammer",
+      "hammer_sledge",
+      "rapier",
+      "fencing_foil",
+      "fencing_sabre",
+      "fencing_epee",
+      "chain",
+      "candlestick",
+      "fork",
+      "spork",
+      "foon",
+      "brick",
+      "pillow",
+      "teddy",
+      "warhammer",
+      "battleaxe",
+      "carver_off",
+      "carver_on",
+      "chainsaw_off",
+      "chainsaw_on",
+      "elec_chainsaw_off",
+      "elec_chainsaw_on",
+      "combatsaw_off",
+      "combatsaw_on",
+      "cs_lajatang_off",
+      "cs_lajatang_on",
+      "e_handcuffs",
+      "extinguisher",
+      "fire_ax",
+      "fishing_rod_basic",
+      "fishing_rod_professional",
+      "knife_steak",
+      "knife_curse",
+      "pickaxe",
+      "scythe",
+      "scythe_war",
+      "sickle",
+      "sm_extinguisher",
+      "stepladder",
+      "vibrator",
+      "bat_floppy",
+      "bat_floppy_on"
+    ]
+  
+  }
+  
+]

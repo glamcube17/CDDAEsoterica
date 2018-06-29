@@ -1,0 +1,50 @@
+[
+  {
+    "id": "wave_gun",
+    "type": "GUN",
+    "name": "wave motion gun",
+    "description": "A massive energy weapon designed by Necaux Labs with the philosophy that there's no such thing as too much dakka.",
+    "weight": 3950,
+    "volume": 14,
+    "price": 69000000,
+    "to_hit": -1,
+    "bashing": 12,
+    "material": [ "superalloy" ],
+    "symbol": "(",
+    "color": "light_cyan",
+    "skill": "rifle",
+    "range": 60,
+    "ranged_damage": 220,
+    "pierce": 150,
+    "dispersion": 30,
+    "sight_dispersion": 0,
+    "aim_speed": 1,
+    "durability": 6,
+    "//burst": 5,
+    "modes": [
+        [ "DEFAULT", "dakka", 3, "SIMULTANEOUS" ],
+        [ "BURST", "more dakka", 5, "SIMULTANEOUS" ],
+        [ "AUTO", "overkill", 20, "SIMULTANEOUS" ],
+        [ "MELEE", "time to reload", 1, "SIMULTANEOUS" ]
+    ],
+    "loudness": 24000,
+    "ups_charges": 200,
+    "reload": 30,
+    "recoil": 600,
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "emitter", 1 ],
+      [ "grip", 1 ],
+      [ "lens", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+    "ammo_effects": [ 
+      "LASER", "INCENDIARY", "FLARE", "WIDE", "DRAW_AS_LINE", "FIRE_TWOHAND",
+      "TRAIL_BIG", "SHOT", "LARGE_BEANBAG"
+    ],
+    "flags": [ "NEVER_JAMS", "NO_UNLOAD", "MODE_BURST", "WATERPROOF_GUN" ]
+  }
+]

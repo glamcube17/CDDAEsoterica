@@ -1,0 +1,630 @@
+[
+  {
+    "result": "rm13_armor_adjusted",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "skills_required": [ "electronics", 6 ],
+    "time": 80000,
+    "reversible": true,
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SEW", "level": 1 } ],
+    "tools": [ [ [ "welder", 18 ], [ "welder_crude", 27 ], [ "soldering_iron", 27 ], [ "toolset", 27 ] ] ],
+    "components": [
+      [ [ "rm13_armor", 1 ] ],
+      [ [ "kevlar_plate", 6 ] ]
+    ]
+  },
+  {
+    "result": "maid_dress",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "time": 90000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [ ["textbook_maid", 2] ],
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "using": [ [ "filament", 17 ] ],
+    "components": [ [ [ "rag", 12 ] ] ]
+  },
+  {
+    "result": "maid_hat",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "time": 40000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [ ["textbook_maid", 2], ["mag_animecon", 3] ],
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "using": [ [ "filament", 8 ] ],
+    "components": [ [ [ "rag", 5 ] ] ]
+  },
+  {
+    "result": "maid_dress_french",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "time": 90000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [ ["textbook_maid", 2], ["mag_animecon", 3] ],
+    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "using": [ [ "filament", 17 ] ],
+    "components": [ [ [ "rag", 12 ] ] ]
+  },
+  
+  
+  {
+    "type" : "recipe",
+    "result": "maid_dress_utility",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "skills_required": ["fabrication", 5],
+    "time": 210000,
+    "reversible": false,
+    "autolearn": true,
+    "book_learn": [ [ "textbook_maid", 4 ] ],
+    "qualities" : [ { "id":"CUT", "level":1 }, { "id":"SEW", "level":1 } ],
+    "using": [ [ "filament", 110 ] ],
+    "components": [
+      [ [ "maid_dress", 1 ], [ "maid_dress_french", 1 ] ],
+      [ [ "apron_leather", 1 ] ],
+      [ [ "skirt_leather", 1 ] ],
+      [ [ "corset",1], ["bondage_suit",1], ["touring_suit",1], ["armor_larmor",1], ["chestwrap_leather",4] ],
+      [ [ "armguard_larmor", 1 ], [ "vambrace_larmor", 1 ] ],
+      [ [ "pants_leather", 1 ], [ "chaps_leather", 1 ] ],
+      [
+        [ "chestrig", 1 ],
+        [ "legrig", 1 ],
+        [ "vest", 1 ],
+        [ "tool_belt", 1 ],
+        [ "ragpouch", 2 ],
+        [ "leather_pouch", 2 ],
+        [ "dump_pouch", 1 ],
+        [ "purse", 1 ],
+        [ "fanny", 1 ]
+      ]
+    ]
+  },
+  {
+    "type" : "recipe",
+    "result": "maid_hat_utility",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "skills_required": ["fabrication", 5],
+    "time": 110000,
+    "reversible": false,
+    "autolearn": true,
+    "book_learn": [ [ "textbook_maid", 4 ] ],
+    "qualities" : [ { "id":"CUT", "level":1 }, { "id":"SEW", "level":1 } ],
+    "using": [ [ "filament", 40 ] ],
+    "components": [
+      [ [ "maid_hat", 1 ] ],
+      [ [ "fedora",1], ["bondage_mask",1], [ "helmet_larmor",1], ["headgear",1], ["tricorne",1], ["cowboy_hat",1] ],
+      [ [ "veil_wedding", 1 ] ]
+    ]
+  },
+  {
+    "type" : "recipe",
+    "result": "maid_shoes_utility",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "skills_required": ["fabrication", 5],
+    "time": 110000,
+    "reversible": false,
+    "autolearn": true,
+    "book_learn": [ [ "textbook_maid", 4 ] ],
+    "tools": [
+      [ [ "surface_heat", 5, "LIST" ] ],
+      [ [ "mold_plastic", -1 ] ]
+    ],
+    "qualities" : [ { "id":"CUT", "level":1 }, { "id":"SEW", "level":1 } ],
+    "using": [ [ "filament", 18 ] ],
+    "components": [
+      [ [ "heels", 1 ], [ "dress_shoes", 1 ], [ "dance_shoes", 1 ] ],
+      [ [ "sneakers", 1 ], [ "lowtops", 1 ], [ "mocassins", 1 ] ],
+      [ [ "plastic_chunk", 4 ] ],
+      [ [ "diveknife", 2 ], [ "switchblade", 2 ], [ "pockknife", 2 ] ],
+      [ [ "spring", 2 ] ]
+    ]
+  },
+  {
+    "type" : "recipe",
+    "result": "maid_gloves_utility",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HANDS",
+    "skill_used": "tailor",
+    "difficulty": 5,
+    "time": 103000,
+    "reversible": false,
+    "autolearn": true,
+    "book_learn": [ [ "textbook_maid", 4 ] ],
+    "qualities" : [ { "id":"CUT", "level":1 }, { "id":"SEW", "level":1 } ],
+    "tools": [ [ [ "needle_curved", -1 ] ] ],
+    "using": [ [ "filament", 8 ], [ "soldering_standard", 20 ] ],
+    "byproducts": [ [ "rag", 4 ] ],
+    "components": [
+      [ [ "long_glove_white", 1 ], [ "glove_jackson", 2 ] ],
+      [ [ "wetsuit_gloves", 1 ] ]
+    ]
+  },
+  {
+    "type" : "recipe",
+    "result": "maid_socks_utility",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_FEET",
+    "skill_used": "tailor",
+    "difficulty": 5,
+    "time": 176000,
+    "reversible": false,
+    "autolearn": true,
+    "book_learn": [ [ "textbook_maid", 4 ] ],
+    "qualities" : [ { "id":"CUT", "level":1 }, { "id":"SEW", "level":1 } ],
+    "using": [ [ "filament", 23 ] ],
+    "components": [
+      [ [ "stockings", 2 ], [ "tights", 2 ] ],
+      [ [ "nomex_socks", 6 ] ]
+    ]
+  },
+  
+  
+  {
+    "type" : "recipe",
+    "result": "maid_belt_utility",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 6,
+    "skills_required": ["tailor", 5],
+    "time": 110000,
+    "reversible": false,
+    "autolearn": true,
+    "book_learn": [ [ "textbook_maid", 4 ] ],
+    "qualities" : [ 
+      { "id":"CUT", "level":1 }, 
+      { "id":"SEW", "level":1 }, 
+      { "id":"SAW_M_FINE", "level": 1 },
+      { "id":"SAW_W", "level": 1 }
+    ],
+    "using": [ [ "filament", 120 ], [ "soldering_standard", 65 ] ],
+    "components": [
+      [ [ "survivor_belt_notools", 1 ] ],
+      [ [ "wrench", 1 ] ],
+      [ [ "screwdriver", 1 ] ],
+      [ [ "hacksaw", 1 ] ],
+      [ [ "hammer", 1 ] ],
+      [ [ "tailors_kit", 1 ] ],
+      [ [ "soldering_iron", 1 ] ],
+      [ [ "mess_kit", 1 ] ],
+      [ [ "g_shovel",1 ], [ "e_tool", 1 ], [ "lobotomizer", 1 ] ],
+      [ [ "mop", 1 ] ],
+      [ [ "washboard", 1 ] ],
+      [ [ "towel", 1 ] ],
+      [ [ "hairpin", 2 ] ],
+      [ [ "elec_hairtrimmer", 1 ], [ "survivor_hairtrimmer", 1 ] ],
+      [ [ "binoculars", 1 ], [ "survivor_scope", 1 ] ],
+      [ [ "vibrator", 1 ] ],
+      [
+        [ "chestrig", 1 ],
+        [ "legrig", 1 ],
+        [ "vest", 1 ],
+        [ "tool_belt", 1 ],
+        [ "ragpouch", 2 ],
+        [ "leather_pouch", 2 ],
+        [ "dump_pouch", 1 ],
+        [ "purse", 1 ],
+        [ "fanny", 1 ]
+      ]
+    ]
+  },
+  
+  
+  
+  
+  
+
+  {
+    "result": "ballgag",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "fabrication",
+    "difficulty": 2,
+    "skills_required": [ "tailor", 2 ],
+    "time": 21000,
+    "reversible": false,
+    "autolearn": false,
+    "decomp_learn": 2,
+    "book_learn": [ [ "textbook_maid", 1 ], [ "manga_hentai_kinky", 2 ] ],
+    "tools": [
+      [ [ "surface_heat", 5, "LIST" ] ],
+      [ [ "mold_plastic", -1 ] ]
+    ],
+    "components": [
+      [ [ "plastic_chunk", 2 ] ],
+      [ [ "leather_belt", 1 ], [ "leather", 6 ] ]
+    ]
+  },
+  {
+    "result": "ballgag_filter",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "skills_required": [ "survival", 2 ],
+    "time": 14000,
+    "reversible": false,
+    "autolearn": false,
+    "decomp_learn": 3,
+    "book_learn": [ [ "textbook_maid", 2 ] ],
+    "tools": [
+      [ [ "surface_heat", 5, "LIST" ] ]
+    ],
+    "components": [
+      [ [ "ballgag", 1 ], [ "ballgag_loose", 1 ] ],
+      [ [ "hose", 1 ] ],
+      [ [ "bag_plastic", 2 ], [ "bottle_plastic", 1 ], [ "bottle_plastic_small", 2 ] ],
+      [ [ "rag", 2 ], [ "bandana", 2 ], [ "paper", 10 ] ],
+      [ [ "charcoal", 30 ] ]
+    ]
+  },
+  
+  
+  
+  
+  {
+    "result": "sense_depriv_hat",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 5,
+    "time": 7000,
+    "reversible": false,
+    "autolearn": false,
+    "decomp_learn": 3,
+    "book_learn": [ [ "textbook_maid", 4 ] ],
+    "components": [
+      [ [ "blindfold", 1 ] ],
+      [ [ "ballgag_filter", 1 ] ],
+      [ [ "hat_noise_cancelling", 1 ] ],
+      [ [ "bondage_mask", 1 ] ]
+    ]
+  },
+  
+  
+  {
+    "result": "buttplug",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "time": 28000,
+    "book_learn": [ [ "textbook_maid", 3 ] ],
+    "tools": [
+      [ [ "surface_heat", 8, "LIST" ] ],
+      [ [ "mold_plastic", -1 ] ]
+    ],
+    "components": [
+      [ [ "plastic_chunk", 6 ] ]
+    ]
+  },
+  {
+    "result": "buttplug_vibe",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "fabrication",
+    "difficulty": 4,
+    "time": 42000,
+    "//book_learn": [ [ "textbook_maid", 3 ] ],
+    "tools": [
+      [ [ "surface_heat", 8, "LIST" ] ],
+      [ [ "mold_plastic", -1 ] ]
+    ],
+    "components": [
+      [ [ "plastic_chunk", 6 ] ],
+      [ [ "motor_small", 1 ] ],
+      [ [ "e_scrap", 2 ] ],
+      [ [ "amplifier", 1 ] ],
+      [ [ "scrap", 2 ] ]
+    ]
+  },
+  {
+    "result": "buttplug_tail",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "time": 30000,
+    "book_learn": [ [ "mag_animecon", 4 ], [ "textbook_maid", 3 ] ],
+    "using": [ [ "filament", 10 ] ],
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "SEW", "level": 1 }
+    ],
+    "tools": [ [ [ "surface_heat", 5, "LIST" ] ] ],
+    "components": [
+      [ [ "fur", 4 ] ],
+      [ [ "string_36", 1 ] ],
+      [ [ "plastic_chunk", 10 ], [ "bottle_plastic", 5 ], [ "bottle_plastic_small", 10 ], [ "jug_plastic", 1 ] ],
+      [ [ "buttplug", 1 ] ]
+    ]
+  },
+  {
+    "result": "buttplug_tail_vibe",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "time": 30000,
+    "//book_learn": [ [ "mag_animecon", 3 ], [ "textbook_maid", 3 ] ],
+    "using": [ [ "filament", 10 ] ],
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "SEW", "level": 1 }
+    ],
+    "tools": [ [ [ "surface_heat", 5, "LIST" ] ] ],
+    "components": [
+      [ [ "fur", 4 ] ],
+      [ [ "string_36", 1 ] ],
+      [ [ "plastic_chunk", 10 ], [ "bottle_plastic", 5 ], [ "bottle_plastic_small", 10 ], [ "jug_plastic", 1 ] ],
+      [ [ "buttplug_vibe", 1 ] ]
+    ]
+  },
+  {
+    "result": "buttplug_tail_advanced",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "electronics",
+    "difficulty": 6,
+    "skills_required": [ [ "tailor", 3 ], [ "computer", 6 ] ],
+    "time": 454000,
+    "book_learn": [ [ "textbook_maid", 5 ] ],
+    "qualities": [
+      { "id": "CUT_FINE", "level": 1 },
+      { "id": "SEW", "level": 1 },
+      { "id": "SCREW_FINE", "level": 1 },
+      { "id": "GRASP_FINE", "level": 1 }
+    ],
+    "tools": [ 
+      [ [ "mold_plastic", -1 ] ],
+      [ [ "magnifying_glass", -1 ], [ "glasses_reading", -1 ], [ "glasses_bifocal", -1 ] ]
+    ],
+    "using": [
+      [ "soldering_standard", 20, "LIST" ],
+      [ "welding_standard", 8, "LIST" ],
+      [ "filament", 17 ]
+    ],
+    "components": [
+      [ [ "circuit_brainlink", 1 ] ],
+      [ [ "fur", 4 ] ],
+      [ [ "plastic_chunk", 6 ] ],
+      [ [ "motor_small", 3 ] ],
+      [ [ "e_scrap", 8 ] ],
+      [ [ "amplifier", 2 ] ],
+      [ [ "processor", 1 ] ],
+      [ [ "transponder", 1 ] ], 
+      [ [ "gold_small", 80 ] ],
+      [ [ "plut_cell", 2 ] ],
+      [ [ "cable", 15 ] ],
+      [ [ "bearing", 40 ], [ "bb", 40 ] ]
+    ]
+  },
+  
+  {
+    "result": "panties_dildo",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "time": 21000,
+    "book_learn": [ [ "manga_hentai_kinky", 4 ], [ "textbook_maid", 3 ] ],
+    "using": [ [ "filament", 10 ] ],
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "SEW", "level": 1 }
+    ],
+    "tools": [ [ [ "surface_heat", 5, "LIST" ] ] ],
+    "components": [
+      [ [ "hot_pants_leather", 1 ] ],
+      [ [ "dildo", 1 ] ],
+      [ [ "buttplug", 1 ] ]
+    ]
+  },
+  {
+    "result": "panties_vibe",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "time": 21000,
+    "book_learn": [ [ "manga_hentai_kinky", 4 ], [ "textbook_maid", 3 ] ],
+    "using": [ [ "filament", 10 ] ],
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "SEW", "level": 1 }
+    ],
+    "tools": [ [ [ "surface_heat", 5, "LIST" ] ] ],
+    "components": [
+      [ [ "hot_pants_leather", 1 ] ],
+      [ [ "vibrator", 1 ] ],
+      [ [ "buttplug_vibe", 1 ] ],
+      [ [ "vibrator_small", 1 ] ]
+    ]
+  },
+  
+  {
+    "result": "titty_milker",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "electronics",
+    "difficulty": 4,
+    "skills_required": [ "mechanics", 2 ],
+    "time": 40000,
+    "book_learn": [ [ "textbook_maid", 4 ] ],
+    "tools": [
+      [ [ "soldering_standard", 8, "LIST" ] ]
+    ],
+    "components": [
+      [ ["glass",2],["bottle_glass",2],["flask_glass",2],["jar_glass",2] ],
+      [ [ "scrap",6 ] ],
+      [ [ "hose", 1 ] ],
+      [ [ "power_supply", 1 ] ],
+      [ [ "crystal_love", 50 ] ]
+    ]
+  },
+  
+  {
+    "result": "shibari",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "skill_used": "fabrication",
+    "difficulty": 0,
+    "time": 3000,
+    "reversible": true,
+    "autolearn": false,
+    "decomp_learn": 2,
+    "book_learn": [ [ "textbook_maid", 1 ], [ "manga_hentai_kinky", 2 ] ],
+    "components": [
+      [ [ "rope_30", 1 ], [ "rope_makeshift_30", 1 ], [ "vine_30", 1 ] ]
+    ],
+    "flags": [ "BLIND_EASY" ]
+  },
+  
+  
+  
+  {
+    "type" : "recipe",
+    "result": "collar_utility",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 6,
+    "skills_required": ["cooking", 4],
+    "time": 110000,
+    "reversible": false,
+    "autolearn": false,
+    "book_learn": [ [ "textbook_maid", 6 ] ],
+    "qualities" : [ { "id":"CUT", "level":1 }, { "id":"SEW", "level":1 } ],
+    "tools": [
+      [ [ "dildo", -1 ], [ "vibrator", 10 ], [ "vibrator_small", 10 ], [ "panties_dildo", -1 ], [ "panties_vibe", -1 ] ]
+    ],
+    "using": [ [ "filament", 40 ] ],
+    "components": [
+      [ [ "leather_collar", 1 ], [ "fur_collar", 1 ] ],
+      [ [ "cow_bell", 1 ], [ "locket", 1 ], [ "pearl_collar", 1 ], [ "diamond", 12 ] ],
+      [ [ "crystal_love", 831 ] ]
+    ]
+  },
+  
+  
+  
+  
+  
+  {
+    "//": "------- START OF RECIPES FOR EXISTING ITEMS -------------------------",
+    "type" : "recipe",
+    "result": "veil_wedding",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 5,
+    "time": 40000,
+    "reversible": false, "autolearn": true,
+    "qualities" : [ { "id":"SEW", "level":1 } ],
+    "using": [ [ "filament", 30 ] ],
+    "components": [ [ [ "rag", 7 ] ] ]
+  },
+  {
+    "type" : "recipe",
+    "result": "bondage_mask",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_HEAD",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "time": 45000,
+    "reversible": false, "autolearn": false,
+    "book_learn": [ [ "textbook_maid", 3 ] ],
+    "qualities" : [ { "id":"SEW", "level":1 } ],
+    "using": [ [ "filament", 18 ] ],
+    "components": [ 
+      [ [ "leather", 8 ] ],
+      [ [ "leather_belt", 1 ] ]
+    ]
+  },
+  {
+    "type" : "recipe",
+    "result": "bondage_suit",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_SUIT",
+    "skill_used": "tailor",
+    "difficulty": 4,
+    "time": 65000,
+    "reversible": false, "autolearn": false,
+    "book_learn": [ [ "textbook_maid", 3 ] ],
+    "qualities" : [ { "id":"SEW", "level":1 } ],
+    "using": [ [ "filament", 30 ] ],
+    "components": [ 
+      [ [ "leather", 24 ] ],
+      [ [ "leather_belt", 2 ] ]
+    ]
+  },
+  {
+    "type" : "recipe",
+    "result": "skirt_leather",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_LEGS",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "time": 35000,
+    "reversible": false, "autolearn": true,
+    "qualities" : [ { "id":"SEW", "level":1 } ],
+    "using": [ [ "filament", 10 ] ],
+    "components": [ 
+      [ [ "leather", 8 ] ]
+    ]
+  },
+  {
+    "type" : "recipe",
+    "result": "corset",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_TORSO",
+    "skill_used": "tailor",
+    "difficulty": 5,
+    "time": 75000,
+    "reversible": false, "autolearn": true,
+    "qualities" : [ { "id":"SEW", "level":1 } ],
+    "using": [ [ "filament", 90 ] ],
+    "components": [ 
+      [ [ "leather", 8 ] ],
+      [ [ "leather_belt", 3 ] ]
+    ]
+  }
+  
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "type" : "construction",
+    "description" : "Build Makeshift Wall", "//": "Step 1: Stick some boards in the ground",
+    "category" : "CONSTRUCT",
+    "required_skills" : [ [ "fabrication", 2 ] ],
+    "time" : 10,
+    "qualities": [ [{ "id": "HAMMER", "level": 1 }], [{ "id": "CUT", "level": 1 }] ],
+    "components" : [
+        [ [ "2x4", 4 ], [ "stick", 4 ], [ "pipe", 4 ] ],
+        [ [ "stick", 2 ], [ "pipe", 2 ] ],
+        [ [ "nail", 10 ], [ "rope_6", 5 ], [ "rope_makeshift_6", 5 ], [ "duct_tape", 20 ] ]
+    ],
+    "pre_note" : "Stick some boards in the ground.\nCan be deconstructed without tools.",
+    "pre_special" : "check_empty",
+    "post_terrain" : "t_wall_makeshift_half"
+  },
+  {
+    "type" : "construction",
+    "description" : "Build Makeshift Wall", "//": "Step 2: Hang a sheet on them",
+    "category" : "CONSTRUCT",
+    "required_skills" : [ [ "fabrication", 2 ] ],
+    "time" : 2,
+    "qualities": [ [ { "id": "HAMMER", "level": 1 } ] ],
+    "components" : [
+        [ [ "sheet", 1 ], [ "blanket", 1 ], [ "down_blanket", 1 ], [ "bag_plastic", 4 ] , [ "duct_tape", 80 ] ],
+        [ [ "nail", 4 ], [ "duct_tape", 20 ] ]
+    ],
+    "pre_note" : "Nail a sheet to the boards.\nCan be deconstructed without tools.",
+    "pre_terrain" : "t_wall_makeshift_half",
+    "post_terrain" : "t_wall_makeshift"
+  },
+  {
+    "type" : "construction",
+    "description" : "Build Makeshift Wall", "//": "Step 3: Add some sheet metal",
+    "category" : "CONSTRUCT",
+    "required_skills" : [ [ "fabrication", 2 ] ],
+    "time" : 20,
+    "qualities": [ [ { "id": "HAMMER", "level": 2 } ] ],
+    "components" : [
+        [ [ "sheet_metal", 2 ] ],
+        [ [ "spike", 4 ], [ "duct_tape", 20 ] ]
+    ],
+    "pre_note" : "Add some sheet metal for strength.\nCan be deconstructed without pants.",
+    "pre_terrain" : "t_wall_makeshift",
+    "post_terrain" : "t_wall_makeshift_reinforced"
+  },
+  
+  
+  {
+    "type" : "construction",
+    "description" : "Build Makeshift Wall Door", "//": "Step 2b: Make it swing",
+    "category" : "CONSTRUCT",
+    "required_skills" : [ [ "fabrication", 3 ] ],
+    "time" : 8,
+    "qualities": [ [{ "id": "HAMMER", "level": 2 }],[{ "id": "CUT", "level": 1 }] ],
+    "components" : [
+        [ [ "rope_6", 2 ], [ "rope_makeshift_6", 2 ], [ "duct_tape", 20 ] ],
+        [ [ "stick", 1 ], [ "pipe", 1 ] ]
+    ],
+    "pre_note" : "Rearrange the framework to swing open.",
+    "pre_terrain" : "t_wall_makeshift",
+    "post_terrain" : "t_wall_makeshift_door_c"
+  },
+  {
+    "type" : "construction",
+    "description" : "Build Makeshift Wall Door", "//": "Step 3b: Make it swing",
+    "category" : "CONSTRUCT",
+    "required_skills" : [ [ "fabrication", 3 ] ],
+    "time" : 8,
+    "qualities": [ [{ "id": "HAMMER", "level": 2 }],[{ "id": "CUT", "level": 1 }] ],
+    "components" : [
+        [ [ "rope_6", 2 ], [ "rope_makeshift_6", 2 ], [ "duct_tape", 20 ] ],
+        [ [ "stick", 1 ], [ "pipe", 1 ] ]
+    ],
+    "pre_note" : "Rearrange the framework to swing open.",
+    "pre_terrain" : "t_wall_makeshift_reinforced",
+    "post_terrain" : "t_wall_makeshift_reinforced_door_c"
+  },
+  
+  {
+    "type" : "construction",
+    "description" : "Build Makeshift Wall Door", "//": "Step 3c: Add some sheet metal",
+    "category" : "CONSTRUCT",
+    "required_skills" : [ [ "fabrication", 2 ] ],
+    "time" : 20,
+    "qualities": [ [ { "id": "HAMMER", "level": 2 } ] ],
+    "components" : [
+        [ [ "sheet_metal", 2 ] ],
+        [ [ "spike", 4 ], [ "duct_tape", 20 ] ]
+    ],
+    "pre_note" : "Add some sheet metal for strength.",
+    "pre_terrain" : "t_wall_makeshift_door_c",
+    "post_terrain" : "t_wall_makeshift_reinforced_door_c"
+  },
+  {
+    "type" : "construction",
+    "description" : "Build Makeshift Wall Door", "//": "Step 3c: Add some sheet metal (to open door)",
+    "category" : "CONSTRUCT",
+    "required_skills" : [ [ "fabrication", 2 ] ],
+    "time" : 20,
+    "qualities": [ [ { "id": "HAMMER", "level": 2 } ] ],
+    "components" : [
+        [ [ "sheet_metal", 2 ] ],
+        [ [ "spike", 4 ], [ "duct_tape", 20 ] ]
+    ],
+    "pre_note" : "Add some sheet metal for strength.",
+    "pre_terrain" : "t_wall_makeshift_door_o",
+    "post_terrain" : "t_wall_makeshift_reinforced_door_o"
+  }
+  
+  
+  
+]

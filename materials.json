@@ -1,0 +1,83 @@
+[
+  {
+    "type": "material",
+    "ident": "silk",
+    "name": "Silk",
+    "sub": "cotton",
+    "copy-from": "cotton",
+    "density": 3,
+    "soft": true,
+    "bash_resist": 1,
+    "cut_resist": 1,
+    "acid_resist": 3,
+    "fire_resist": 0,
+    "elec_resist": 2,
+    "chip_resist": 9, "//":"Cotton is 6, leather is 10, kevlar is 20",
+    "repaired_with": "rag",
+    "salvaged_into": "rag",
+    "dmg_adj": [ "ripped", "torn", "shredded", "tattered" ],
+    "bash_dmg_verb": "ripped",
+    "cut_dmg_verb": "cut",
+    "burn_data": [
+      { "fuel": 1, "smoke": 1, "burn": 1, "chance": 5 },
+      { "fuel": 1, "smoke": 1, "burn": 1 },
+      { "fuel": 1, "smoke": 1, "burn": 2 }
+    ]
+  },
+  
+  {
+    "type": "material",
+    "ident": "thought",
+    "name": "Dreams",
+    "density": 2,
+    "bash_resist": 1,
+    "cut_resist":  1,
+    "acid_resist": 1,
+    "fire_resist": 1,
+    "elec_resist": 1,
+    "chip_resist": 4,
+    "dmg_adj": [ "hazy", "wispy", "faint", "fading" ],
+    "bash_dmg_verb": "scattered",
+    "cut_dmg_verb": "torn"
+  },
+
+  {
+    "type": "material",
+    "ident": "unobtainium",
+    "name": "Unobtainium",
+    "density": 40,
+    "bash_resist":  6,
+    "cut_resist":   6,
+    "acid_resist":  8,
+    "fire_resist":  3,
+    "elec_resist":  2,
+    "chip_resist": 20,
+    "repaired_with": "rock",
+    "dmg_adj": [ "scratched", "cut", "cracked", "shattered" ],
+    "bash_dmg_verb": "cracked",
+    "cut_dmg_verb": "chipped"
+  },
+  
+  {
+    "type": "material",
+    "ident": "superweave",
+    "name": "Superweave",
+    "density": 10,
+    "soft": true,
+    "bash_resist": 2,
+    "cut_resist": 2,
+    "acid_resist": 5,
+    "fire_resist": 2,
+    "elec_resist": 4,
+    "chip_resist": 20,
+    "repaired_with": "e_scrap",
+    "dmg_adj": [ "ripped", "torn", "shredded", "tattered" ],
+    "bash_dmg_verb": "ripped",
+    "cut_dmg_verb": "cut",
+    "burn_data": [
+      { "immune": true },
+      { "immune": true },
+      { "immune": true }
+    ]
+  }
+]

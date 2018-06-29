@@ -1,0 +1,30 @@
+[
+  {
+    "id": "sack_trunk_u",
+    "type": "vehicle_part",
+    "name": "cargo pouch",
+    "item": "bag_canvas",
+    "location": "under",
+    "symbol": "H",
+    "broken_symbol": "#",
+    "color": "brown",
+    "broken_color": "dark_gray",
+    "difficulty": 1,
+    "durability": 350,
+    "size": 400, "//":"Same storage as a vehicle scoop",
+    "damage_modifier": 10,
+    "folded_volume": 1,
+    "breaks_into": [ { "item": "bag_canvas", "damage":[1,4] } ],
+    "//requirements": {
+      "repair": {
+        "time": 5000,
+        "using": [ [ "vehicle_nail_install", 5 ] ]
+      },
+      "//install": {
+        "time": 5000,
+        "using": [ [ "vehicle_nail_install", 5 ] ]
+      }
+    },
+    "flags": [ "CARGO", "COVERED", "TOOL_NONE", "FOLDABLE", "NAILABLE" ]
+  }
+]

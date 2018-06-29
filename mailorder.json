@@ -1,0 +1,193 @@
+[
+  {
+    "result": "mailorder_textbook_maid",
+    "using": [ [ "cash_dollars", 289.00 ] ],
+    "book_learn": [ [ "catalog_necaux", 0 ] ],
+    "type": "recipe", "category": "CC_OTHER", "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "fabrication", "difficulty": 0, "autolearn": false,
+    "components": [ [ [ "paper", 1 ] ] ], "tools": [ [[ "scanner", -1 ]] ], "time": 1000
+  },
+  {
+    "result": "mailorder_manga_yuri",
+    "using": [ [ "cash_dollars", 44.75 ] ],
+    "book_learn": [ ["manga_yuri",0], ["mag_animecon",0], ["textbook_maid",0] ],
+    "type": "recipe", "category": "CC_OTHER", "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "fabrication", "difficulty": 0, "autolearn": false,
+    "components": [ [ [ "paper", 1 ] ] ], "tools": [ [[ "scanner", -1 ]] ], "time": 1000
+  },
+  {
+    "result": "mailorder_manga_hentai",
+    "using": [ [ "cash_dollars", 24.95 ] ],
+    "book_learn": [ ["manga_hentai",0], ["manga_hentai_kinky",0], ["textbook_maid",0] ],
+    "type": "recipe", "category": "CC_OTHER", "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "fabrication", "difficulty": 0, "autolearn": false,
+    "components": [ [ [ "paper", 1 ] ] ], "tools": [ [[ "scanner", -1 ]] ], "time": 1000
+  },
+  {
+    "result": "mailorder_manga_hentai_kinky",
+    "using": [ [ "cash_dollars", 31.25 ] ],
+    "book_learn": [ ["manga_hentai_kinky",0], ["textbook_maid",0] ],
+    "type": "recipe", "category": "CC_OTHER", "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "fabrication", "difficulty": 0, "autolearn": false,
+    "components": [ [ [ "paper", 1 ] ] ], "tools": [ [[ "scanner", -1 ]] ], "time": 1000
+  },
+  {
+    "result": "mailorder_maid_armor",
+    "using": [ [ "cash_dollars",  690000.00 ] ],
+    "book_learn": [ [ "catalog_necaux", 0 ], ["textbook_maid",0] ],
+    "type": "recipe", "category": "CC_OTHER", "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "fabrication", "difficulty": 0, "autolearn": false,
+    "components": [ [ [ "paper", 1 ] ] ], "tools": [ [[ "scanner", -1 ]] ], "time": 1000
+  },
+  {
+    "result": "mailorder_maid_helmet",
+    "using": [ [ "cash_dollars",  340000.00 ] ],
+    "book_learn": [ [ "catalog_necaux", 0 ], ["textbook_maid",0] ],
+    "type": "recipe", "category": "CC_OTHER", "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "fabrication", "difficulty": 0, "autolearn": false,
+    "components": [ [ [ "paper", 1 ] ] ], "tools": [ [[ "scanner", -1 ]] ], "time": 1000
+  },
+  {
+    "result": "mailorder_vibrator",
+    "using": [ [ "cash_dollars",  187.50 ] ],
+    "book_learn": [ ["manga_hentai_kinky",0], ["textbook_maid",0] ],
+    "type": "recipe", "category": "CC_OTHER", "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "fabrication", "difficulty": 0, "autolearn": false,
+    "components": [ [ [ "paper", 1 ] ] ], "tools": [ [[ "scanner", -1 ]] ], "time": 1000
+  },
+  {
+    "result": "mailorder_circuit_brainlink",
+    "using": [ [ "cash_dollars",  4200.00 ] ],
+    "book_learn": [ ["catalog_necaux", 0] ],
+    "type": "recipe", "category": "CC_OTHER", "subcategory": "CSC_OTHER_OTHER",
+    "skill_used": "fabrication", "difficulty": 0, "autolearn": false,
+    "components": [ [ [ "paper", 1 ] ] ], "tools": [ [[ "scanner", -1 ]] ], "time": 1000
+  },
+  
+  
+  {
+    "id": "mailorder_template",
+    "type": "GENERIC",
+    "category": "other",
+    "symbol": "?",
+    "color": "white",
+    "name": "order form (none)",
+    "description": "A mail-order form from a catalog. You've already scanned in the order, all that's left is waiting for it to arrive.",
+    "price": 0,
+    "material": ["paper"],
+    "weight": 15,
+    "volume": 0,
+    "use_action": {
+      "type": "delayed_transform",
+      "target": "null",
+      "transform_age": 14400,
+      "menu_text": "Check",
+      "not_ready_msg": "You look up hopefully, but there's no sign of your package.",
+      "msg": "You look up, and see the delivery drone! Yay, it's here!"
+    }
+  },
+  {
+    "id": "mailorder_textbook_maid",
+    "name": "order form (Maid in Heaven)",
+    "type": "GENERIC",
+    "copy-from": "mailorder_template",
+    "use_action": {
+      "target": "textbook_maid",
+      "transform_age": 14400,
+      "type":"delayed_transform", "menu_text": "Check",
+      "not_ready_msg": "You look up hopefully, but there's no sign of your package.",
+      "msg": "You look up, and see the delivery drone! Yay, it's here!"
+    }
+  },
+  {
+    "id": "mailorder_manga_yuri",
+    "name": "order form (yuri doujin)",
+    "type": "GENERIC",
+    "copy-from": "mailorder_template",
+    "use_action": {
+      "target": "manga_yuri",
+      "transform_age": 14400,
+      "type":"delayed_transform", "menu_text": "Check",
+      "not_ready_msg": "You look up hopefully, but there's no sign of your package.",
+      "msg": "You look up, and see the delivery drone! Yay, it's here!"
+    }
+  },
+  {
+    "id": "mailorder_manga_hentai",
+    "name": "order form (hentai doujin)",
+    "type": "GENERIC",
+    "copy-from": "mailorder_template",
+    "use_action": {
+      "target": "manga_hentai",
+      "transform_age": 14400,
+      "type":"delayed_transform", "menu_text": "Check",
+      "not_ready_msg": "You look up hopefully, but there's no sign of your package.",
+      "msg": "You look up, and see the delivery drone! Yay, it's here!"
+    }
+  },
+  {
+    "id": "mailorder_manga_hentai_kinky",
+    "name": "order form (kinky doujin)",
+    "type": "GENERIC",
+    "copy-from": "mailorder_template",
+    "use_action": {
+      "target": "manga_hentai_kinky",
+      "transform_age": 14400,
+      "type":"delayed_transform", "menu_text": "Check",
+      "not_ready_msg": "You look up hopefully, but there's no sign of your package.",
+      "msg": "You look up, and see the delivery drone! Yay, it's here!"
+    }
+  },
+  {
+    "id": "mailorder_maid_armor",
+    "name": "order form (NS17 battle maid dress)",
+    "type": "GENERIC",
+    "copy-from": "mailorder_template",
+    "use_action": {
+      "target": "maid_armor",
+      "transform_age": 43200,
+      "type":"delayed_transform", "menu_text": "Check",
+      "not_ready_msg": "You look up hopefully, but there's no sign of your package.",
+      "msg": "You look up, and see the delivery drone! Yay, it's here!"
+    }
+  },
+  {
+    "id": "mailorder_maid_helmet",
+    "name": "order form (NS17 battle maid headdress)",
+    "type": "GENERIC",
+    "copy-from": "mailorder_template",
+    "use_action": {
+      "target": "maid_helmet",
+      "transform_age": 43200,
+      "type":"delayed_transform", "menu_text": "Check",
+      "not_ready_msg": "You look up hopefully, but there's no sign of your package.",
+      "msg": "You look up, and see the delivery drone! Yay, it's here!"
+    }
+  },
+  {
+    "id": "mailorder_vibrator",
+    "name": "order form (vibrator)",
+    "type": "GENERIC",
+    "copy-from": "mailorder_template",
+    "use_action": {
+      "target": "vibrator",
+      "transform_age": 14400,
+      "type":"delayed_transform", "menu_text": "Check",
+      "not_ready_msg": "You look up hopefully, but there's no sign of your package.",
+      "msg": "You look up, and see the delivery drone! Yay, it's here!"
+    }
+  },
+  {
+    "id": "mailorder_circuit_brainlink",
+    "name": "order form (neural interface circuit)",
+    "type": "GENERIC",
+    "copy-from": "mailorder_template",
+    "use_action": {
+      "target": "circuit_brainlink",
+      "transform_age": 43200,
+      "type":"delayed_transform", "menu_text": "Check",
+      "not_ready_msg": "You look up hopefully, but there's no sign of your package.",
+      "msg": "You look up, and see the delivery drone! Yay, it's here!"
+    }
+  }
+]

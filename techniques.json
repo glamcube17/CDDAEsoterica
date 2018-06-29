@@ -1,0 +1,111 @@
+[
+  {
+    "type" : "technique",
+    "id" : "tec_wife_counter",
+    "name": "stun counter",
+    "min_melee": 2,
+    "min_unarmed": 1,
+    "unarmed_allowed" : true,
+    "melee_allowed" : true,
+    "block_counter": true,
+    "dodge_counter": true,
+    "defensive": true,
+    "stun_dur": 2,
+    "down_dur": 1,
+    "mult_bonuses" : [
+      ["movecost", 0.0], 
+      ["damage","bash", 0.0],
+      ["damage","cut",  0.0],
+      ["damage","stab", 0.0]
+    ],
+    "messages" : [
+      "You backhand %s as they attack, leaving them stunned",
+      "<npcname> backhands %s as they attack, leaving them stunned"
+    ],
+    "movecost_mult": 0
+  },
+  {
+    "type" : "technique",
+    "id" : "tec_wife_feint",
+    "name" : "relentless",
+    "min_melee" : 1,
+    "min_unarmed": 1,
+    "unarmed_allowed" : true,
+    "melee_allowed" : true,
+    "//defensive" : true,
+    "miss_recovery" : true,
+    "movecost_mult": 0.5,
+    "messages" : [
+      "You relentlessly strike at %s",
+      "<npcname> relentlessly strike at %s"
+    ]
+  },
+  {
+    "type": "technique",
+    "id": "tec_wife_throw",
+    "name": "raging throw",
+    "min_melee": 6,
+    "min_unarmed": 5,
+    "unarmed_allowed": true,
+    "strictly_unarmed": true,
+    "//melee_allowed": false,
+    "stun_dur": 8,
+    "down_dur": 3,
+    "crit_tec": true,
+    "min_bashing_damage": 15,
+    "req_buffs" : [
+      "wife_move"
+    ],
+    "knockback_dist": 10,
+    "knockback_spread": 15,
+    "messages" : [
+        "You hurl %s into the distance",
+        "<npcname> hurls %s into the distance"
+    ]
+  },
+  {
+    "type": "technique",
+    "id": "tec_wife_precise",
+    "name": "hissatsu-ougi",
+    "min_melee": 4,
+    "min_firstaid": 3,
+    "min_unarmed": 4,
+    "unarmed_allowed": true,
+    "melee_allowed" : true,
+    "crit_tec": true,
+    "stun_dur": 1,
+    "//weighting" : 2,
+    "weighting" : 0.5,
+    "mult_bonuses" : [
+      ["movecost", 1.2], 
+      ["damage","bash", 3.0],
+      ["damage","cut",  3.0],
+      ["damage","stab", 3.0]
+    ],
+    "messages" : [
+        "You unerringly strike %s",
+        "<npcname> unerringly strikes %s"
+    ]
+  },
+  {
+    "type": "technique",
+    "id": "tec_wife_rapid",
+    "name": "simultaneous strike",
+    "min_melee": 4,
+    "min_dodge": 3,
+    "min_unarmed": 3,
+    "unarmed_allowed": true,
+    "melee_allowed": true,
+    "weighting": 0.25,
+    "mult_bonuses" : [
+      ["movecost", 0.12], 
+      ["damage","bash", 0.65],
+      ["damage","cut",  0.85],
+      ["damage","stab", 0.65]
+    ],
+    "messages" : [
+        "You simultaneous strike %s",
+        "<npcname> simultaneous strikes %s"
+    ]
+  }
+]

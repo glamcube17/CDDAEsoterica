@@ -1,0 +1,66 @@
+[
+  {
+    "type": "mutation",
+    "id": "KINKY",
+    "name": "Kinky",
+    "points": 2,
+    "description": "Before the Cataclysm, your dirty mind was held back only by society. Now that it's gone, there's no reason not to indulge. Your morale is improved by wearing lewd clothing.",
+    "starting_trait": true,
+    "valid": false,
+    "purifiable": false
+  },
+  
+  
+  {
+    "type": "mutation_category",
+    "id": "mutation_lewd",
+    "name": "Lewd",
+    "category": "LEWD",
+    "mutagen_message": "A tingling warmth spreads through your body...",
+    "iv_message": "Your body feels so hot. So good.",
+    "iv_pain": 3,
+    "iv_morale": 25,
+    "iv_morale_max": 100,
+    "iv_sound": true,
+    "iv_sound_message" : "You let out a loud moan.",
+    "iv_noise": 15,
+    "iv_sleep": true, "//" : "Should be out for two minutes.",
+    "iv_sleep_dur" : 20,
+    "iv_sleep_message" : "You slip into a blissful trance...",
+    "memorial_message" : "Suffered death by snu-snu."
+  },
+ {
+    "type" : "mutation",
+    "id" : "THRESH_LEWD",
+    "name" : "Too Lewd",
+    "points" : 1,
+    "description" : "You sometimes look back on your days before your tail came in.  But you're better now.",
+    "valid": false,
+    "purifiable": false,
+    "threshold": false
+  },
+  
+  
+  {
+    "type" : "mutation",
+    "id" : "LOVEMAKE",
+    "name" : "Lovemaker (test)",
+    "points" : 2,
+    "visibility" : 3,
+    "ugliness" : 6,
+    "description" : "You have full control of your vines, and can grow new ones and detach old ones more or less at will.",
+    "//prereqs" : ["PLANTSKIN", "BARK"],
+    "//prereqs2" : ["VINES2"],
+    "cancels" : ["CHITIN"],
+    "category" : ["MUTCAT_LEWD"],
+    "active"     :    true,
+    "cost"       :    10,
+    "hunger"     :    true,
+    "thirst"     :    true,
+    "fatigue"    :    true,
+    "spawn_item" : { "type": "crystal_love", "charges":"10", "message": "You detach a love from your body." }
+  }
+  
+  
+ 
+]

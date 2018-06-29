@@ -1,0 +1,257 @@
+[
+  {
+    "id": "bat_floppy",
+    "type": "GENERIC",
+    "name": "big floppy bat",
+    "name_plural": "big floppy bats",
+    "description": "This is a highly oversized marital aid, far too large to be practical for its ostensible purpose. It makes for an unorthodox but surprisingly effective weapon due to its sheer size.  It can be turned on for powerful vibrations.",
+    "weight": 4750,
+    "volume": 13,
+    "price": 42500,
+    "to_hit": -1,
+    "bashing": 34,
+    "material": [ "plastic", "steel", "superalloy" ],
+    "symbol": "/",
+    "color": "pink",
+    "techniques": [ "WBLOCK_1", "WIDE", "SWEEP" ],
+    "flags": [ "DURABLE_MELEE", "REACH_ATTACK", "NONCONDUCTIVE", "WHIP", "NEEDS_UNFOLD", "RADIO_MODABLE", "ACT_IN_FIRE" ],
+    "category": "weapons",
+    "ammo": "battery",
+    "initial_charges": 100,
+    "max_charges": 200,
+    "use_action": {
+      "menu_text": "Turn on",
+      "type": "transform",
+      "target": "bat_floppy_on",
+      "active": true,
+      "noise": 10,
+      "msg": "Your big floppy bat starts buzzing and writhing!"
+    }
+  },
+  {
+    "id": "bat_floppy_on",
+    "type": "GENERIC",
+    "name": "big floppy bat (on)",
+    "name_plural": "big floppy bats (on)",
+    "description": "This is a highly oversized marital aid, far too large to be practical for its ostensible purpose. It makes for an unorthodox but surprisingly effective weapon due to its sheer size.  It is currently vibrating, causing it to flop around awkwardly. It seems to expand and contract as well, increasing its reach.",
+    "weight": 4750,
+    "volume": 13,
+    "price": 42500,
+    "to_hit": -3,
+    "bashing": 34,
+    "material": [ "plastic", "steel", "superalloy" ],
+    "symbol": "/",
+    "color": "pink",
+    "techniques": [ "WBLOCK_1", "SPIN", "SWEEP", "RAPID" ],
+    "flags": [ "DURABLE_MELEE", "REACH_ATTACK", "REACH3", "NONCONDUCTIVE", "WHIP", "NEEDS_UNFOLD", "RADIO_MODABLE", "ALWAYS_TWOHAND", "TRADER_AVOID" ],
+    "//": [ "MESSY", "DANGEROUS" ],
+    "category": "weapons",
+    "ammo": "battery",
+    "initial_charges": 100,
+    "max_charges": 200,
+    "turns_per_charge": 10,
+    "revert_to": "bat_floppy",
+    "use_action": {
+      "menu_text": "Turn off",
+      "type": "transform",
+      "target": "bat_floppy",
+      "moves": 50,
+      "msg": "Your big floppy bat falls silent."
+    }
+  },
+  
+  
+  
+  {
+    "id": "knife_curse",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "elegant knife",
+    "name_plural": "elegant knives",
+    "description": "A long, slender silver kitchen knife that cuts through steak as easily as soft cheese. Holding it feels natural, like an extension of your body. In fact, whenever you throw it away you find it right back in your hand.",
+    "volume": 1,
+    "price": 0,
+    "cutting": 34,
+    "bashing": 2,  "//": "36 total damage",
+    "to_hit": 1,   "//": "+1 to-hit bonus",
+    "weight": 780, "//": "82 moves/attack",
+    "//": "Overall DPT 36*(100/82)*(1+0.1*1) = 56 dpt = .56 dpm",
+    "material": [ "silver", "wood" ],
+    "symbol": "/",
+    "color": "white",
+    "flags": [ 
+      "DURABLE_MELEE", "UNARMED_WEAPON", "NONCONDUCTIVE",
+      "NO_UNWIELD", "TRADER_AVOID",  "USE_ON_NPC", "NO_SALVAGE",
+      "INSPIRATIONAL"
+    ],
+    
+    "use_action": {
+      "//":"Currently can only target parts with existing damage",
+      "type":"heal",
+      "move_cost": 250,
+      "limb_power": -50, "head_power": -50, "torso_power": -50,
+      "limb_scaling": 16, "head_scaling": 16, "torso_scaling": 16,
+      "used_up_item": "knife_curse_wet",
+      "target_charges": 10,
+      "effects": [{"id":"bleed","duration":30,"part": "mouth"}]
+    },
+    "qualities": [ ["BUTCHER",40], ["CUT",1], ["COOK",1] ],
+    
+    "//artifact_data" : {
+      "//effects_wielded": ["AEP_SAP_LIFE"],
+      "charge_type": "ARTC_PAIN"
+    },
+    "book_data" : {
+      "//":"This is mainly so the name shows up in red",
+      "intelligence" : 40,
+      "time" : 414, "//":"41400 - Takes 69 hours to even finish skimming it",
+      "fun" : 1000,
+      "skill" : "cutting",
+      "required_level" : 7,
+      "max_level" : 10,
+      "//":"TODO: include some recipe or something",
+      "//":"TODO: Prevent disassembly into paper"
+    }
+  }, 
+
+  {
+    "id": "knife_curse_wet",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "elegant knife",
+    "name_plural": "elegant knives",
+    "description": "A long, slender silver kitchen knife that cuts through flesh as easily as soft cheese. Holding it feels natural, like an extension of your body. In fact, whenever you throw it away you find it right back in your hand.\n\nIt is wet from your blood. You have a strange urge to lick it off, and it feels even sharper and hungrier than usual. It seems to cut through even distance, leaving gashes in things fifteen feet away.",
+    "weight": 780,
+    "volume": 1,
+    "price": 0,
+    "to_hit": 3,
+    "bashing": 4,
+    "cutting": 46,
+    "material": [ "copper", "bone" ],
+    "symbol": "/",
+    "color": "ltred",
+    "flags": [ 
+      "DURABLE_MELEE", "UNARMED_WEAPON", "NO_UNWIELD", "TRADER_AVOID", 
+      "USE_ON_NPC", "NO_UNLOAD", "WET", "NONCONDUCTIVE",
+      "REACH_ATTACK", "REACH3",
+      "HURT_WHEN_WIELDED",
+      "LIGHT_60"
+    ],
+    "//":["ACT_IN_FIRE", "ACT_ON_RANGED_HIT", "RADIO_ACTIVATION","RADIOSIGNAL_1","RADIOSIGNAL_2","RADIOSIGNAL_3"],
+    
+    "use_action": [
+      {
+        "//":"Currently can only target parts with existing damage",
+        "type":"heal",
+        "move_cost": 250,
+        "limb_power": -10, "head_power": -10, "torso_power": -10, 
+        "limb_scaling": 5, "head_scaling": 5, "torso_scaling": 5,
+        "used_up_item": "knife_curse_wet"
+      },
+      {
+        "type": "transform",
+        "target": "knife_curse",
+        "menu_text": "Wipe clean",
+        "msg": "Before you can wipe the blood off, the %s absorbs it."
+      },
+      {
+        "type": "delayed_transform", "//":"Can't have two transforms, and delayed shows up first",
+        "target": "knife_curse_fed",
+        "//menu_text": "Feed",
+        "menu_text": "Lick clean",
+        "active": true,
+        "target_charges": 10,
+        "moves":0, "transform_age":0,"not_ready_msg":"seeing this is a bug",
+        "msg": "Before your tongue touches the blood, the %s begins absorbing it."
+      }
+    ],
+    "qualities": [ ["COOK", 1], ["BUTCHER",40] ],
+    
+    "artifact_data" : {
+      "effects_wielded": ["AEP_SAP_LIFE"]
+    }
+  },    
+  
+  {
+    "id": "knife_curse_fed",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": "elegant knife",
+    "name_plural": "elegant knives",
+    "description": "A long, slender silver kitchen knife that cuts through bones as easily as soft cheese. Its attention is on feeding for now, and you think you could probably put it down.",
+    "weight": 0.7800,
+    "volume": 0,
+    "price": 0,
+    "to_hit": 4,
+    "cutting": 69,
+    "material": [ "iron", "stone" ],
+    "symbol": "/",
+    "color": "red",
+    
+    "initial_charges": 10,
+    "max_charges": 10,
+    "turns_per_charge": 1,
+    "revert_to": "knife_curse",
+    "use_action": [
+      {
+        "//":"Currently can only target parts with existing damage",
+        "type":"heal",
+        "move_cost": 0,
+        "limb_power": -50, "head_power": -50, "torso_power": -50, 
+        "limb_scaling": 16, "head_scaling": 10, "torso_scaling": 10,
+        "//used_up_item": "knife_curse_fed"
+      },
+      {
+        "type": "transform",
+        "target": "knife_curse_fed",
+        "menu_text": "Lick",
+        "active": true,
+        "target_charges": 10,
+        "msg": "You lick the %s, but everywhere your tongue goes the blood is already gone."
+      },
+      {
+        "type": "explosion",
+        "sound_volume": 9999,
+        "//sound_msg": "  a deafening silence.\nYou taste  copper and dry earth.\nYou feel   an urge to mutilate yourself.\nYou smell  ",
+        "sound_msg": "  a deafening silence.\nYou taste  copper and dry earth.\nYou feel   an urge to mutilate yourself.",
+        "no_deactivate_msg": "You might be able to put down the %s."
+      }
+    ],
+    
+    "techniques": [ "WBLOCK_2", "PRECISE", "BRUTAL", "IMPALE", "RAPID"  ],
+    "flags": [ 
+      "DURABLE_MELEE", "UNARMED_WEAPON", "TRADER_AVOID", "DANGEROUS",
+      "REACH_ATTACK", "REACH3",
+      "LIGHT_240", "CHARGEDIM", "NO_UNLOAD"
+    ],
+    "artifact_data" : {
+      "effects_wielded": [
+        "AEP_STR_UP","AEP_DEX_DOWN","AEP_INT_DOWN","AEP_PER_DOWN",
+        "AEP_SPEED_UP","AEP_SAP_LIFE","AEP_ATTENTION","AEP_EVIL"
+      ]
+    }
+    
+    
+  },
+  
+  {
+    "type" : "recipe",
+    "result": "knife_curse",
+    "id_suffix": "uncraft",
+    "category": "CC_NONCRAFT",
+    "subcategory": "CSC_NONCRAFT",
+    "difficulty": 0,
+    "time": 100,
+    "reversible": false,
+    "autolearn": false,
+    "components": [
+      [ [ "knife_curse", 1 ], [ "knife_curse_wet", 1 ], [ "knife_curse_fed", 1 ] ]
+    ],
+    "tools": [ [ [ "knife_curse", -1 ] ] ]
+  }
+  
+  
+  
+  
+  
+]

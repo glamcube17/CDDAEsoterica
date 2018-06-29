@@ -1,0 +1,22 @@
+[
+  {
+    "id": "lucha_mask",
+    "type": "ARMOR",
+    "name": "luchador mask",
+    "description": "A brightly-colored mask worn by luchadors.",
+    "weight": 110,
+    "volume": 1,
+    "price": 8600,
+    "to_hit": -3,
+    "material": [ "cotton" ],
+    "symbol": "[",
+    "color": "yellow",
+    "covers": [ "HEAD", "MOUTH" ],
+    "coverage": 100,
+    "encumbrance": 3,
+    "warmth": 25,
+    "material_thickness": 2,
+    "environmental_protection": 1,
+    "flags": [ "VARSIZE", "FANCY", "SKINTIGHT" ]
+  }
+]

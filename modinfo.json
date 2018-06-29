@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "AndiMod",
+    "name": "Esoterica",
+    "authors": [ "AndiBanandi" ],
+    "maintainers": [ "AndiBanandi" ],
+    "description": "Adds a few random ideas",
+    "category": "misc_additions",
+    "dependencies": [ "dda" ]
+  }
+]

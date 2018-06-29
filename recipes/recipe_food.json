@@ -1,0 +1,19 @@
+[
+  {
+    "type" : "recipe",
+    "result": "cheese_crackers",
+    "category": "CC_FOOD",
+    "subcategory": "CSC_FOOD_SNACK",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": 5000,
+    "autolearn": true,
+    "qualities" : [
+      {"id":"CUT","level":1}
+    ],
+    "components": [
+      [ [ "cheese", 1 ], [ "cheese_hard", 1 ], [ "can_cheese", 1] ],
+      [ [ "crackers", 8 ] ]
+    ]
+  }
+]

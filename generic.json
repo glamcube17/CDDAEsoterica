@@ -1,0 +1,73 @@
+[
+  {
+    "id": "bundle_rag",
+    "type": "GENERIC",
+    "category": "spare_parts",
+    "name": "bundle of rags",
+    "name_plural": "bundles of rags",
+    "description": "Cotton rags, bundled together for storage. Disassemble to unpack.",
+    "weight": 120,
+    "volume": 2,
+    "price": 0,
+    "material": "cotton",
+    "symbol": ",",
+    "color": "white"
+  },
+  {
+    "id": "bundle_leather",
+    "type": "GENERIC",
+    "category": "spare_parts",
+    "name": "bundle of leather",
+    "name_plural": "bundles of leather",
+    "description": "Leather patches, bundled together for storage. Disassemble to unpack.",
+    "weight": 150,
+    "volume": 2,
+    "price": 20000,
+    "material": "leather",
+    "symbol": ",",
+    "color": "brown"
+  },
+  {
+    "id": "bundle_wool",
+    "type": "GENERIC",
+    "category": "spare_parts",
+    "name": "bundle of felt",
+    "name_plural": "bundles of felt",
+    "description": "Felt patches, bundled together for storage. Disassemble to unpack.",
+    "weight": 150,
+    "volume": 2,
+    "price": 20000,
+    "material": "wool",
+    "symbol": ",",
+    "color": "white"
+  },
+  
+  {
+    "id": "circuit_brainlink",
+    "type": "GENERIC",
+    "category": "spare_parts",
+    "name": "neural interface circuit",
+    "description": "Advanced electronic components designed to interface with the nervous system through close bodily contact.",
+    "weight": 420,
+    "volume": 2,
+    "price": 340000,
+    "material": [ "plastic", "gold" ],
+    "symbol": ",",
+    "color": "yellow"
+  },
+  
+  {
+    "id": "unobtainium",
+    "type": "GENERIC",
+    "category": "other",
+    "name": "unobtainium ingot",
+    "description": "Material from another dimension. Hard to obtain.",
+    "weight": 99999,
+    "volume": 1,
+    "price": 10000000,
+    "material": [ "unobtainium" ],
+    "symbol": ",",
+    "color": "light_magenta"
+  }
+  
+]

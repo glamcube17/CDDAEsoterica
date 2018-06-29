@@ -1,0 +1,43 @@
+[
+  {
+    "id": "blood_crystal",
+    "type": "AMMO",
+    "category": "other",
+    "name": "crystallized blood",
+    "name_plural": "crystallized blood",
+    "description": "A delicate crystal formed from human blood. Demons love it, probably.",
+    "ammo_type": "crystal_blood",
+    
+    "weight": 0.4,
+    "volume": 0,
+    "price": 0,
+    "material": "hflesh",
+    "symbol": "*",
+    "color": "red",
+    "count": 10,
+    "stack_size": 10,
+    "range": 12,
+    "damage": 12,
+    "pierce": 13,
+    "dispersion": 60
+  },
+  {
+    "id": "crystal_love",
+    "type": "AMMO",
+    "category": "other",
+    "name": "love",
+    "name_plural": "love",
+    "description": "Your stored-up feelings of love, affection, and excitement. Gives a new meaning to \"made with love\".",
+    "ammo_type": "emotion",
+    
+    "weight": 0,
+    "volume": 0,
+    "price": 0,
+    "material": "thought",
+    "symbol": "+",
+    "color": "red",
+    "count": 1,
+    "stack_size": 100000, "//":"Just to make sure they're weightless"
+  }
+  
+]

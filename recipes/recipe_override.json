@@ -1,0 +1,22 @@
+[
+  {
+    "result": "leather_collar",
+    "type": "recipe",
+    "category": "CC_ARMOR",
+    "subcategory": "CSC_ARMOR_OTHER",
+    "skill_used": "tailor",
+    "difficulty": 3,
+    "time": 20000,
+    "book_learn": [ [ "mag_animecon", 3 ], [ "textbook_maid", 3 ] ],
+    "using": [ [ "filament", 5 ] ],
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "SEW", "level": 1 }
+    ],
+    "tools": [ [ [ "soldering_standard", 10, "LIST" ], [ "surface_heat", 10, "LIST" ] ] ],
+    "components": [
+      [ [ "leather", 2 ] ],
+      [ [ "scrap", 1 ] ]
+    ]
+  }
+]

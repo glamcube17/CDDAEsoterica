@@ -1,0 +1,157 @@
+[
+  {
+    "id": "noisemaker_can",
+    "type": "TOOL",
+    "name": "noisemaker",
+    "name_plural": "noisemakers",
+    "description": "A metal can full of loose pebbles, as well as a small motor. It makes a loud rattling sound when the motor is turned on; a rag keeps it from rattling from normal movement.",
+    "weight": 1600,
+    "volume": 1,
+    "price": 0,
+    "to_hit": -1,
+    "bashing": 2,
+    "material": [ "aluminum", "steel" ],
+    "symbol": ";",
+    "color": "yellow",
+    "ammo": "battery",
+    "initial_charges": 0,
+    "max_charges": 30,
+    "use_action": {
+      "type": "transform",
+      "menu_text": "Turn on",
+      "msg": "You turn on the %s's motor, and it begins rattling noisily.",
+      "active": true,
+      "need_charges": 1,
+      "need_charges_msg": "The %s needs batteries for its motor.",
+      "target": "noisemaker_can_on"
+    },
+    "flags": [ "RADIO_MODABLE", "RADIOCARITEM", "BOMB" ]
+  },
+  {
+    "id": "noisemaker_can_on",
+    "type": "TOOL",
+    "name": "noisemaker (active)",
+    "name_plural": "noisemakers (active)",
+    "description": "A metal can full of loose pebbles, as well as a small motor. The motor is on, rattling the pebbles.",
+    "weight": 1600,
+    "volume": 1,
+    "price": 0,
+    "to_hit": -1,
+    "bashing": 2,
+    "material": [ "aluminum", "steel" ],
+    "symbol": ";",
+    "color": "yellow",
+    "ammo": "battery",
+    "initial_charges": 30,
+    "max_charges": 30,
+    "turns_per_charge": 1,
+    "revert_to": "noisemaker_can",
+    "use_action": {
+      "type": "explosion",
+      "sound_volume": 31,
+      "sound_msg": "Rattle, rattle",
+      "no_deactivate_msg": "It doesn't have an off switch, you'd have to just take out the batteries."
+    },
+    
+    "flags": [ "RADIO_MODABLE", "RADIOCARITEM" ]
+  },
+  
+  
+  {
+    "id": "multitool",
+    "type": "TOOL",
+    "name": "multi-tool",
+    "//": "The multi-tool is a bit more of a toolkit than a knife.",
+    "description": "A cleverly designed all-in-one tool which combines several smaller tools into the handles of a pair of pliers.",
+    "weight": 494,
+    "volume": 1,
+    "price": 3000,
+    "to_hit": -4,
+    "bashing": 1,
+    "cutting": 4,
+    "material": "steel",
+    "symbol": ";",
+    "color": "light_gray",
+    "//": "I bumped its metal sawing and wrenching up to 2 to allow it to actually be viable to use",
+    "qualities": [ [ "CUT", 1 ], [ "SAW_W", 1 ], [ "SAW_M", 2 ], [ "WRENCH", 2 ], [ "SCREW", 1 ], [ "SCREW_FINE", 1 ], [ "BUTCHER", 7 ] ],
+    "flags": [ "STAB", "SHEATH_KNIFE" ]
+  },
+  
+  
+  {
+    "id": "scanner",
+    "type": "GENERIC", "category": "tools",
+    "name": "mail-order scanner",
+    "description": "A handheld device to make orders and scan cards. Processing and delivering orders are both automated, so you might still be able to order things.",
+    "weight": 434,
+    "volume": 1,
+    "price": 3000,
+    "material": [ "plastic", "aluminum" ],
+    "symbol": "r",
+    "color": "light_gray"
+  },
+  {
+    "id": "tweezers",
+    "type": "GENERIC", "category": "tools",
+    "name": "tweezers",
+    "description": "A simple metal grasper, designed for fine manipulation.",
+    "weight": 30,
+    "volume": 0,
+    "price": 1000,
+    "material": [ "steel" ],
+    "symbol": "/",
+    "color": "light_gray",
+    "qualities": [ [ "GRASP_FINE", 1 ] ]
+  },
+  {
+    "id": "raindoll",
+    "type": "GENERIC", "category": "tools",
+    "name": "teruteru-bouzu",
+    "description": "A simple cloth doll, turned upside down to invite rain.",
+    "weight": 10,
+    "volume": "125ml",
+    "price": 0,
+    "material": [ "cotton" ],
+    "symbol": "p",
+    "color": "light_gray",
+    "artifact_data" : {
+      "effects_carried": ["AEP_BAD_WEATHER"]
+    }
+  },
+  
+  {
+    "id": "dildo",
+    "type": "TOOL",
+    "name": "dildo",
+    "name_plural": "dildoes",
+    "description": "This artificial phallus is just the thing to knead the tension out and help you relax.  Use it to take a break and unwind.",
+    "weight": 315,
+    "volume": 1,
+    "price": 5500,
+    "material": [ "plastic" ],
+    "symbol": ";",
+    "color": "dark_gray",
+    "use_action": "VIBE"
+  },
+  
+  {
+    "id": "vibrator_small",
+    "type": "TOOL",
+    "name": "bullet vibe",
+    "name_plural": "bullet vibes",
+    "description": "This tiny device is just the thing to help you relax on the go.  Use it to take a break and unwind.",
+    "weight": 169,
+    "volume": 0,
+    "price": 8500,
+    "material": [ "plastic" ],
+    "symbol": ",",
+    "color": "dark_gray",
+    "ammo": "battery",
+    "initial_charges": 50,
+    "max_charges": 100,
+    "charges_per_use": 5, "//":"Uses 15 charges total; can't use with less than 5 charges",
+    "use_action": "VIBE"
+  }
+  
+  
+]

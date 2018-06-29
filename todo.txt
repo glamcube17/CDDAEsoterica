@@ -1,0 +1,138 @@
+Misc:
+-garbage: used condom / pack with condoms
+NRxluchador mask
+-raisins
+-sword-chucks
+-lightsabers (+double)
+
+*contortionist suit - +1 dex -craft with fetish gear
+
+-Some holy items requiring small relic to craft
+
+
+json: Add LEWD and SUPER_LEWD tags to items, and Kinky trait
+lua: apply morale bonus if player has Kinky and is wearing lewd items
+
+
+-bondage mitts - craft from boxing gloves
+
+-some sort of utility earrings
+
+Mutcat with only one mutation to give specific trait
+
+**COW-SIZED PET CARRIER
+
+!** Pet collar:
+-Load with love from other sources, or recharge in sunlight
+-Max 143 charges
+-Use love for multiple purposes
+-Slowly consume love for heat (other features unavailable)
+-Heal
+
+@~How to make an item that requires an NPC to get?
+-byproduct from healing but prevent using it on self somehow?
+-something that only works for the player preventing it from cha[n/r]ging?
+
+
+
+xHypnotic pendant - adds fatigue
+Hypnotic sleepmask - AEPs to minimize disturbances - BLIND, psyshield, invis, PerIntDexSpd down, noise, smoke (w/envprot); act to add fatigue+depressant, paralyze
+
+
+xWorldly Pocketwatch - add buff for +1000 speed for 2 turns (12 seconds), 1chg (req 24 charges?),time recharge
+
+
+Voyeur's monocle - telescope, camera
+
+Atomic candle - makeshift, plutonium pellets embedded in wax; very dim but light
+
+
+
+-metal bondage mitts with hammering quality
+
+-cat paw mittens with higher encumbrance but some nice artifact passive
+
+-kitty paw booties - AEP_STEALTH
+-kitty paw mittens - AEP_CARRY(?)
+-kitty bell - AEP_NOISE, AEP_PSYCHIC(??? mental state feels protected)
+
+-survivor towel - dry,rollmat,rainprotect+hood,wet->filter, wield as shitty whip
+
+xWorn blanket: Hiding under it WILL protect you from the monsters. At least, the ones in your mind.
+
+
+-Ben wa balls - passive morale?
+-Ginger root buttplug for long-release stimulant + a bit of pain
+
+
+
+Items:
+xMakeshift noisemaker
+-Better noisemaker with bike horn - make a piston thing
+-S
+
+
+Weapons:
+xFloppy Bat
+xWave Motion Gun
+
+Armor:
+xcombat maid outfit
+
+Books:
+xhentai doujinshi (regular and kinky versions)
+xyuri doujinshi
+-The Modern Trappist - about TRAPPIST system; rfuel, lifeSuppGear
+
+Bionics:
+-Self-Destruct Button
+
+
+Constructions:
+xMakeshift/sheet walls - Some boards with a sheet
+
+
+
+
+Drinking bird to generate slight constant power from perpetual motion
+
+
+Other:
+xCut holes in power armor
+?craft maid outfit in anime magazine - why isn't this working?
+-construct ATM with component from vending machine
+-construct ATM->something, deconstruct that tile
+
+-require Adult License to order lewd items online?
+
+
+SOURCE:
+
+
+-ARTC_STAMINA (currently made ARTC_FATIGUE)
+
+-NO_UNWEAR flag - see i_rem in character.cpp
+
+-CHARGE_REQUIRE_EQUIP flag for artifacts
+   allow making artifacts charge only when worn/wielded
+
+
+-LEWD and SUPER_LEWD flags that provide morale bonus with a new Kinky trait
+
+
+
+
+TOGGLE TAB SKIPPING TURNS
+Toggle display of hordes on map
+
+
+-Dumbwaiters
+
+-Pocket Dimension CBM - persistant storage space, 100 bionic power <==> 1L of storage, cost to activate is 100bp/1L of items currently stored in it
+
+Traits/Mutations:
+-Seasonal Allergies
+-ADD
+
+
+

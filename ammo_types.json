@@ -1,0 +1,14 @@
+[
+  {
+    "type" : "ammunition_type",
+    "id" : "crystal_blood",
+    "name" : "blood crystal",
+    "default" : "blood_crystal"
+  },
+  {
+    "type" : "ammunition_type",
+    "id" : "emotion",
+    "name" : "feelings",
+    "default" : "crystal_love"
+  }
+]

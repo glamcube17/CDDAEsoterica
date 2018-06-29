@@ -1,0 +1,20 @@
+[
+  {
+    "id": "soldering_standard",
+    "type": "requirement",
+    "//": "Soldering metal items - TODO find a way to add instead of replace",
+    "tools": [ [ [ "soldering_iron", 1 ], [ "toolset", 1 ], [ "maid_belt_utility", 1 ] ] ]
+  },
+  {
+    "id": "cash",
+    "type": "requirement",
+    "//": "Used for mail-ordering",
+    "tools": [ [ [ "cash_card", 1 ] ] ]
+  },
+  {
+    "id": "cash_dollars",
+    "type": "requirement",
+    "//": "Used for mail-ordering",
+    "tools": [ [ [ "cash_card", 100 ] ] ]
+  }
+]

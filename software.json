@@ -1,0 +1,11 @@
+[
+  {
+    "id": "software_lewd",
+    "copy-from": "software",
+    "type":"GENERIC",
+    "name": "porn",
+    "name_plural": "porn",
+    "description": "Somebody's porn collection. Extensive, but not much practical use.",
+    "price": 300
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "LEWD",
+    "type": "json_flag",
+    "context": [ "ARMOR", "TOOL_ARMOR", "TOOL" ],
+    "description": "Wearing this clothing gives a morale bonus if the player has the Kinky trait.",
+    "info": "This item is <info>lewd</info>.",
+    "conflicts": [ "SUPER_LEWD", "TOO_LEWD" ]
+  },
+  {
+    "id": "SUPER_LEWD",
+    "type": "json_flag",
+    "context": [ "ARMOR", "TOOL_ARMOR", "TOOL" ],
+    "description": "Gives an additional moral bonus over LEWD if the player has the Kinky trait.",
+    "info": "This item is <info>very lewd</info>.",
+    "conflicts": [ "LEWD", "TOO_LEWD" ]
+  },
+  {
+    "id": "TOO_LEWD",
+    "type": "json_flag",
+    "context": [ "ARMOR", "TOOL_ARMOR", "TOOL" ],
+    "description": "Gives an additional moral bonus over SUPER_LEWD with both Kinky and Masochist traits, but a penalty with neither.",
+    "info": "This item is <info>way too lewd</info>.",
+    "conflicts": [ "LEWD", "SUPER_LEWD" ]
+  }
+]

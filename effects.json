@@ -1,0 +1,119 @@
+[
+  {
+    "type": "effect_type",
+    "id": "hypno",
+    "name": ["Trance"],
+    "desc": ["It's not hard to think or anything. You just don't want to."], "//":"...baka",
+    "apply_message": "You fall into a trance.",
+    "remove_message": "You fade out of your trance.",
+    "rating": "bad",
+    "max_intensity": 20,
+    "base_mods": {
+      "str_mod": [5],
+      "dex_mod": [-3],
+      "int_mod": [-20],
+      "per_mod": [-14]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "hypnototal",
+    "name": ["Hypnosis"],
+    "desc": ["Your mind is blank."],
+    "apply_message": "Your mind goes completely blank.",
+    "remove_message": "A semblance of thought trickles back into your mind.",
+    "rating": "bad",
+    "base_mods": {
+      "fatigue_tick": [7],
+      "//fatigue_chance": [4],
+      "//fatigue_min": [30],
+      "fatigue_max": [192],
+      "per_mod": [-20],
+      "int_mod": [-20],
+      "dex_mod": [-20],
+      "speed_mod": [-20],
+      "//sleep_chance": [501]
+    }
+  },
+  
+  {
+    "type": "effect_type",
+    "id": "timestop",
+    "name": ["The World"],
+    "desc": ["Time, stand still!"],
+    "apply_message": "ZA WARUDO!\nToki yo tomare!",
+    "remove_message": "Soshite, toki wo ugokidasu.",
+    "//apply_message": "ZA WARUDO!\nTime, stand still!",
+    "//remove_message": "And so, time flows again.",
+    "rating": "good",
+    "base_mods": {
+      "speed_mod": [9999],
+      "dex_mod": [8],
+      "per_mod": [8]
+    }
+  },
+  
+  {
+    "type": "effect_type",
+    "id": "time_comedown",
+    "name": [""],
+    "desc": [""],
+    "show_in_info": false,
+    "apply_message": "",
+    "remove_message": "",
+    "rating": "bad",
+    "base_mods": {
+      "dex_mod": [-8],
+      "per_mod": [-8],
+      
+      "pain_chance": [2],
+      "pain_min": [1],
+      "pain_max_val": [-1],
+      
+      "stamina_chance": [2],
+      
+      "pkill_tick": [1],
+      "pkill_min": [-10],
+      "pkill_max_val": [0]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "time_poison",
+    "name": [""],
+    "desc": [""],
+    "show_in_info": false,
+    "apply_message": "",
+    "remove_message": "",
+    "rating": "bad",
+    "base_mods": {
+      "pain_chance": [1],
+      "pain_min": [1],
+      "pain_max_val": [-1],
+      
+      "hurt_chance": [4],
+      "hurt_min": [1],
+      
+      "stamina_chance": [2],
+      
+      "pkill_tick": [1],
+      "pkill_min": [-10],
+      "pkill_max_val": [0]
+    }
+  },
+  {
+    "type": "effect_type",
+    "id": "kinky",
+    "name": ["Kinky"],
+    "desc": ["This is a temporary effect, will be properly replaced with a morale bonus later."],
+    "apply_message": "I am fully naked at last! So comfortable!",
+    "remove_message": "Damn clothes! I don't want to wear it!",
+    "rating": "good",
+    "base_mods": {
+      "str_mod": [2],
+      "dex_mod": [2],
+      "per_mod": [2],
+      "int_mod": [2]
+    }
+  }
+]

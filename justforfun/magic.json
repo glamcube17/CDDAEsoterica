@@ -1,0 +1,34 @@
+[
+  {
+    "id": "time_watch",
+    "type": "TOOL",
+    "name": "worldly pocketwatch",
+    "name_plural": "worldly pocketwatches",
+    "description": "When you look into the face of this watch, it feels like it contains the world.",
+    "weight": 169,
+    "volume": 0,
+    "price": 0,
+    "material": [ "silver" ],
+    "symbol": ",",
+    "color": "red",
+    
+    "ammo":"emotion",
+    "max_charges":24, "initial_charges": 24,
+    "charges_per_use": 24,
+    "artifact_data":{ 
+      "charge_type": "ARTC_PAIN"
+    },
+    "use_action" : {
+      "type" : "consume_drug",
+      "moves": 350, "//":"Activation not instantaneous",
+      "activation_message" : "Time stands still.",
+      "effects" : [
+        { "id": "timestop", "duration": 2 },
+        { "id": "time_comedown", "duration": 600 },
+        { "id": "time_poison", "duration": 120 },
+        { "id": "teleglow", "duration": 600 }
+      ]
+    }
+  }
+  
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "type": "COMESTIBLE",
+    "comestible_type": "FOOD",
+    "id": "cheese_crackers",
+    "name": "cheese and crackers",
+    "name_plural" : "cheese and crackers",
+    "description": "Soda crackers topped with slices of cheese. A timeless snack.",
+    "symbol": "%",
+    "color": "yellow",
+    "spoils_in" : 672,
+    "stim": 1,
+    "healthy": 1,
+    "nutrition": 17, "//":"12 from components",
+    "charges": 8,
+    "price": 560,
+    "material": [ "milk", "wheat" ],
+    "weight": 120,
+    "volume": 1,
+    "fun": 12, "//":"same as chocolate waffles"
+  }
+]

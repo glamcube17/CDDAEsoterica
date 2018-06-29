@@ -1,0 +1,21 @@
+[
+  {
+    "id": "bio_foodgen",
+    "copy-from": "bionic_general",
+    "type": "BIONIC_ITEM",
+    "name": "Fast Food Generator CBM",
+    "description": "This unit uses advanced cryptography to quantum tunnel gluons out of the fourth dimension, generating a mound of french fries in your hands out of thin air.",
+    "price": 550000,
+    "difficulty": 4
+  },
+  {
+    "id": "bio_foodgen",
+    "type": "bionic",
+    "name": "Fast Food Generator",
+    "description": "Uses advanced cryptography to quantum tunnel gluons out of the fourth dimension, generating a mound of french fries in your hands out of thin air.",
+    "occupied_bodyparts": [ [ "HAND_L", 5 ], [ "HAND_R", 5 ] ],
+    "act_cost": 216, "//":"About the same amount you get from metabolizing the result",
+    "fake_item": "fresh_fries",
+    "flags": [ "BIONIC_WEAPON" ]
+  }
+]

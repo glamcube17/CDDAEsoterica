@@ -1,0 +1,238 @@
+[
+  {
+    "id" : "novels",
+    "type" : "item_group",
+    "items": [
+      [ "manga_yuri", 8 ],
+      [ "manga_hentai", 8 ],
+      [ "manga_hentai_kinky", 6 ]
+    ]
+  },
+  {
+    "id" : "magazines",
+    "type" : "item_group",
+    "items": [
+      [ "manga_yuri", 18 ],
+      [ "manga_hentai", 10 ],
+      [ "manga_hentai_kinky", 8 ],
+      [ "catalog_necaux", 5 ]
+    ]
+  },
+  {
+    "id" : "homebooks",
+    "type" : "item_group",
+    "items": [
+      [ "manga_yuri", 8 ],
+      [ "manga_hentai", 8 ],
+      [ "manga_hentai_kinky", 6 ],
+      [ "manual_wife", 1 ],
+      [ "textbook_maid", 4 ],
+      [ "catalog_necaux", 4 ]
+    ]
+  },
+  {
+    "id" : "textbooks",
+    "type" : "item_group",
+    "items": [ 
+      [ "textbook_maid", 4 ],
+      [ "catalog_necaux", 4 ]
+    ]
+  },
+  {
+    "id" : "manuals",
+    "type" : "item_group",
+    "items": [ 
+      [ "textbook_maid", 8 ]
+    ]
+  },
+  {
+    "id" : "book_martial",
+    "type" : "item_group",
+    "items": [ [ "manual_wife", 75 ] ]
+  },
+  {
+    "id" : "mansion_books",
+    "type" : "item_group",
+    "items": [
+      [ "manga_yuri", 4 ],
+      [ "manga_hentai", 4 ],
+      [ "manga_hentai_kinky", 3 ],
+      [ "manual_wife", 8 ],
+      [ "textbook_maid", 18 ]
+    ]
+  },
+  {
+    "id" : "mansion_guns",
+    "type" : "item_group",
+    "items": [
+      [ "maid_helmet", 1 ],
+      [ "maid_armor",  1 ],
+      [ "knife_curse", 1 ]
+    ]
+  },
+
+  
+  
+  {
+    "id": "lab_dorm",
+    "type": "item_group",
+    "items": [ [ "bat_floppy", 10 ], [ "hypno_pendant", 10 ] ]
+  },
+  {
+    "id": "consumer_electronics",
+    "type": "item_group",
+    "items": [ 
+      [ "bat_floppy", 5 ],
+      [ "catalog_necaux", 8 ]
+    ]
+  },
+  {
+    "id": "electronics",
+    "type": "item_group",
+    "items": [ 
+      [ "catalog_necaux", 4 ]
+    ]
+  },
+  
+  {
+    "id": "cm_maid",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [
+      { "item": "maid_helmet",   "prob":  1, "damage": [ 0, 4 ] },
+      { "item": "maid_armor",    "prob":  1, "damage": [ 0, 4 ] },
+      { "item": "textbook_maid", "prob": 34 }
+    ]
+  },
+  {
+    "id": "soa_battlemaid",
+    "type": "item_group",
+    "subtype": "collection",
+    "items": [
+      [ "maid_armor", 100 ],
+      [ "maid_helmet", 100 ],
+      [ "broom", 100 ],
+      [ "knife_curse", 30 ]
+    ]
+  },
+  {
+    "id": "suit_of_armor",
+    "type": "item_group",
+    "subtype": "distribution",
+    "items": [ { "group": "soa_battlemaid", "prob": 4 } ]
+  },
+  {
+    "id": "rare",
+    "type": "item_group",
+    "items": [
+      { "item": "maid_helmet", "prob": 40 },
+      { "item": "maid_armor",  "prob": 40 },
+      { "item": "knife_curse", "prob": 40 }
+    ]
+  },
+  {
+    "id": "vault",
+    "type": "item_group",
+    "items": [
+      { "item": "maid_helmet", "prob": 2 },
+      { "item": "maid_armor",  "prob": 2 }
+    ]
+  },
+  {
+    "id": "knifeblock",    "type": "item_group",
+    "items": [ [ "knife_curse", 1 ] ]
+  },{
+    "id": "dining",    "type": "item_group",
+    "items": [ [ "knife_curse", 1 ] ]
+  },{
+    "id": "kitchen_nonfood",    "type": "item_group",
+    "items": [ [ "knife_curse", 1 ] ]
+  },{
+    "id": "home_hw",    "type": "item_group",
+    "items": [ [ "knife_curse", 3 ] ]
+  },{
+    "id": "cop_evidence",    "type": "item_group",
+    "items": [ [ "knife_curse", 3 ] ]
+  },{
+    "id": "contraband",    "type": "item_group",
+    "items": [ [ "knife_curse", 1 ] ]
+  },{
+    "id": "hospital_lab",    "type": "item_group",
+    "items": [ [ "knife_curse", 1 ] ]
+  },{
+    "id": "surgery",    "type": "item_group",
+    "items": [ [ "knife_curse", 1 ] ]
+  },{
+    "id": "medieval",    "type": "item_group",
+    "items": [ [ "knife_curse", 2 ] ]
+  },{
+    "id": "pawn",    "type": "item_group",
+    "items": [ [ "knife_curse", 1 ], [ "hypno_pendant", 5 ] ]
+  },{
+    "id": "weapons",    "type": "item_group",
+    "items": [ [ "knife_curse", 2 ] ]
+  },{
+    "id": "spider",    "type": "item_group",
+    "items": [ [ "knife_curse", 1 ], [ "hypno_pendant", 3 ] ]
+  },{
+    "id": "survivorzed_extra",    "type": "item_group",
+    "items": [ [ "knife_curse", 1 ] ]
+  },{
+    "id": "antique_rare",    "type": "item_group",
+    "items": [ [ "knife_curse", 3 ], [ "hypno_pendant", 7 ] ]
+  },{
+    "id": "museum_melee",    "type": "item_group",
+    "items": [ [ "knife_curse", 3 ] ]
+  },
+  {
+    "id": "sex_lair",
+    "type": "item_group",
+    "items": [
+      [ "maid_armor",  1 ],
+      [ "maid_helmet", 1 ],
+      [ "maid_dress",  5 ],
+      [ "maid_hat",  5 ],
+      [ "textbook_maid", 10 ],
+      [ "ballgag", 30 ],
+      [ "sense_depriv_hat", 5 ],
+      [ "ballgag_filter", 2 ],
+      [ "hypno_pendant", 5 ],
+      { "item": "vibrator", "prob": 3, "count": 1, "container-item": "maid_dress" }
+    ]
+  },
+  
+  
+  {
+    "id": "toy_box",    "type": "item_group",
+    "items": [ [ "worn_blanket", 8 ] ], "//":"Rarely in crates"
+  },{
+    "id": "child_items",    "type": "item_group",
+    "items": [ [ "worn_blanket", 1 ] ]
+  },{
+    "id": "hospital_incubator",    "type": "item_group",
+    "items": [ [ "worn_blanket", 5 ] ]
+  },{
+    "id": "church", "type": "item_group",
+    "items": [ [ "worn_blanket", 4 ] ]
+  },{
+    "id": "pawn",   "type": "item_group",
+    "items": [ [ "worn_blanket", 1 ] ]
+  },{
+    "id": "lab_dorm",    "type": "item_group",
+    "items": [ [ "worn_blanket", 1 ] ]
+  },{
+    "id": "spider",    "type": "item_group",
+    "items": [ [ "worn_blanket", 4 ] ]
+  },
+  
+  {
+    "id": "jewelry_front",    "type": "item_group",
+    "items": [ [ "hypno_pendant", 10 ] ]
+  },{
+    "id": "jewelry_back",    "type": "item_group",
+    "items": [ [ "hypno_pendant", 12 ] ]
+  },{
+    "id": "arcade_prizes",    "type": "item_group",
+    "items": [ [ "hypno_pendant", 4 ] ]
+  }
+]

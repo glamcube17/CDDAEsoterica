@@ -1,0 +1,116 @@
+[
+
+
+  {
+    "type" : "martial_art",
+    "id" : "style_time",
+    "name" : "The World",
+    "description" : "My S t a n d, The World, allows me to stop time!",
+    "arm_block" : 1,
+    "leg_block" : 10,
+    "techniques": [
+      "tec_time_stop",
+      "tec_time_stopped"
+    ],
+    "ondodge_buffs": [
+      {
+        "id": "time_chance",
+        "name": "",
+        "description": "I reject my humanity! Jojo!",
+        "unarmed_allowed": true, "melee_allowed": true, "strictly_unarmed": false,
+        "min_melee": 7,
+        "min_dodge": 7,
+        "buff_duration": 3,
+        "max_stacks": 1
+      }
+    ],
+    "onhit_buffs": [
+      {
+        "id": "time_stopped",
+        "name": "The World",
+        "description": "Time stands still.",
+        "unarmed_allowed": true, "melee_allowed": true, "strictly_unarmed": false,
+        "min_melee": 7,
+        "min_dodge": 7,
+        "buff_duration": 2,
+        "max_stacks": 1,
+        "//req_buffs": "time_chance",
+        "flat_bonuses": [
+          ["speed", 10000],
+          ["hit",   10000]
+        ]
+      }
+    ]
+  },
+  
+  {
+    "type": "technique",
+    "id": "tec_time_stop",
+    "name": "The World",
+    "unarmed_allowed": true,
+    "melee_allowed": true,
+    "min_melee": 7,
+    "min_dodge": 7,
+    "weighting": 10.0,
+    "//req_buffs": "time_chance",
+    "mult_bonuses" : [
+      ["movecost", 0.0]
+    ],
+    "messages" : [
+      "ZA WARUDO! Toki yo tomare!\n%s is frozen in the stopped time",
+      "<npcname> stops time"
+    ]
+  },
+  {
+    "type": "technique",
+    "id": "tec_time_stop_crit",
+    "name": "",
+    "copy_from": "tec_time_stop",
+    "crit_tec": true,
+    "messages" : [
+      "ZA WARUDO! Toki yo tomare!\n%s is frozen in the stopped time",
+      "<npcname> stops time"
+    ]
+  },
+  {
+    "type": "technique",
+    "id": "tec_time_stopped",
+    "name": "Toki yo tomare",
+    "unarmed_allowed": true,
+    "melee_allowed": true,
+    "weighting": 100.0,
+    "req_buffs": "time_stopped",
+    "//flat_bonuses" : [
+      ["movecost", 1000.0],
+      ["arpen","cut", 8]
+    ],
+    "mult_bonuses" : [
+      ["movecost", 10.0],
+      ["damage", "bash", 0.5],
+      ["damage", "cut",  0.5],
+      ["damage", "stab", 0.5]
+    ],
+    "messages" : [
+      "MUDA DA! You strike %s in the stopped time",
+      "<npcname> strikes %s in the stopped time"
+    ]
+  },
+  {
+    "type": "technique",
+    "id": "tec_time_stopped_crit",
+    "name": "",
+    "copy_from": "tec_time_stopped",
+    "crit_tec": true,
+    "mult_bonuses" : [
+      ["movecost", 10.0],
+      ["damage", "bash", 0.5],
+      ["damage", "cut",  0.5],
+      ["damage", "stab", 0.5]
+    ],
+    "messages" : [
+      "MUDA DA! You strike %s in the stopped time",
+      "<npcname> strikes %s in the stopped time"
+    ]
+  }
+
+]
